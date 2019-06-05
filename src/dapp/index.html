@@ -1,0 +1,109 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<title>FlightSurety</title>
+	<link href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<!-- // TODO: onload refresh all! -->
+<!-- Airlines -->
+
+
+<main class="container">
+	<h1>Transaction logs for flights and airlines </h1>
+	<div id="display-wrapper" class="top-20"> </div>
+
+	<div class="flexbox">
+
+		<div class='boxed'>
+			<h2>Airlines</h2>
+			<h5 id="number-airlines"></h5>
+			<input type="button" class="btn btn-primary" value="Update Airlines" id="update-airlines" />
+			<p>Currently registered airlines:</p>
+			<table class="table table-sm table-hover table-striped table-dark" style="text-align:center">
+				<thead>
+					<tr>
+						<th>Airline</th>
+						<th>Address</th>
+						<th>State</th>
+						<th>Votes</th>
+					</tr>
+				</thead>
+				<tbody id="airlinesTable"> </tbody>
+			</table>
+		</div>
+
+		<!-- Flights -->
+		<div class="boxed">
+			<h2>Flights</h2>
+			<h5 id="number-flights"></h5>
+			<input type="button" class="btn btn-primary" value="Update Flights" , id="<Update Flights>" />
+			<br>
+			<p></p>
+			<select id="flights-dropdown" class="mydropdown">
+				<option value="TP344" name="">TP344</option>
+				<option value="TY444" name="">TY444</option>
+				<option value="Z44" name="">Z44</option>
+			</select>
+			<br>
+			<p id="selectedFlight">(Selected flight key: None)</p>
+			<!-- <p id="selectedFlightName">(Selected flight name: None)</p> -->
+		</div>
+
+		<!-- Passengers -->
+		<div class="boxed">
+			<h2>Passengers</h2>
+			<p><span>Current passenger: </span><span id="passenger-pubkey" style="font-weight: bold">0</span></p>
+			<!-- <p>Currently selected passenger: -->
+			<!-- <p id="passenger-pubkey">None</p> -->
+			<select id="amounts" class="mydropdown2">
+				<option value="-1">Select insurance amount</option>
+				<option value="0.25">0.25 ETH</option>
+				<option value="0.50">0.50 ETH</option>
+				<option value="0.75">0.75 ETH</option>
+				<option value="1.0">1.0 ETH</option>
+			</select>
+			<br>
+			<p></p>
+			<input type="button" class="btn btn-primary" value="Buy insurance for <select flight>" ,
+				id="buy-insurance" />
+			<br>
+			<p></p>
+			<p><span>Insurance amount: </span><span id="insurance-amount" style="font-weight: bold">0</span></p>
+			<input type="button" class="btn btn-primary" value="Check payout (after simulation)" , id="check-payout" />
+			<p><span>Available insurance payout: </span><span id="payout-amount" style="font-weight: bold">0</span></p>
+			<input type="button" class="btn btn-primary" value="Payout to passenger" , id="payout" />
+		</div>
+
+		<!-- Oracles -->
+		<div class="boxed">
+			<h2>Oracle Simulation</h2>
+			<input type="button" class="btn btn-primary" value="Simulate flight status" , id="simulate" />
+			<br>
+		</div>
+
+		<h1>Transaction logs for passengers and oracles</h1>
+		<div id="display-wrapper2" class="bottom-20"> </div>
+
+		<!-- Other	 -->
+		<!-- <div>
+			<h2>TESTING</h2>
+		</div>
+		<p>New para</p>
+		<form>
+			Enter:<input type="text" id="number" name="number" />
+			<input type="button" value="buve" onclick="getCube()" />
+		</form>
+
+		<div>
+			<p>TESTING</p>
+			<form name="myForm">
+				<input type="button" value="comment" onclick="showCommentForm()">
+				<div id="mylocation"></div>
+			</form>
+		</div> -->
+	</div>
+
+</main>

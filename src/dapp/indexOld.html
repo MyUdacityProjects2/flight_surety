@@ -1,0 +1,60 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>FlightSurety</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+</head>
+
+<body>
+
+    <nav class="navbar navbar-expand-md navbar-dark bg-dark fixed-top">
+        <a class="navbar-brand" href="#">FlightSurety</a>
+        <!-- <a class="navbar-brand" href="#">Test1</a> -->
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault"
+            aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+    </nav>
+
+    <main class="container">
+
+        <div id="display-wrapper" class="top-20"> </div>
+        <!--
+        <div class="row top-20">
+            <label class="form">Flight</label> <input type="text" id="flight-number"> <btn class="btn btn-primary" id="submit-oracle">Submit to Oracles</btn>
+        </div> -->
+
+        <h2>Register Airline</h2> <br>
+            <label class="form">Airline Address</label>
+            <input type="text" id="airline-address">
+            <label class="form">Airline Name</label>
+            <input type="text" id="airline-name">
+            <btn class="btn btn-primary" id="create-airline">Create Airline</btn>
+        <br> <br> <br>
+
+        <h2>Register Flight</h2> <br>
+        <label class="form">Flight Number</label> <input type="text" id="flight-name">
+        <label class="form">Ariline Address</label> <input type="text" id="airline-address2">
+        <btn class="btn btn-primary" id="register-flight">Register Flight</btn>
+        <br> <br> <br>
+
+        <h2>Buy Flight Insurance</h2> <br>
+        <label class="form">Flight Number</label> <input type="text" id="flight-number-buy">
+        <label class="form">Amount (Wei)</label> <input type="text" id="buy-amount">
+        <btn class="btn btn-primary" id="buy-flight">Insure Flight</btn>
+        <br> <br> <br>
+
+        <h2>Flight Update</h2> <br>
+        <label class="form">Flight Number</label> <input type="text" id="flight-number">
+        <btn class="btn btn-primary" id="submit-oracle">Submit to Oracles</btn>
+        <div id="display-wrapper-flight-update" class="top-20"></div>
+
+    </main>
+
+</body>
+
+</html>
